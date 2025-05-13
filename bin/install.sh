@@ -20,4 +20,7 @@ set -e; \
     tar -xzf nvim.tar.gz --directory /opt/nvim --strip-components 1; \
     rm nvim.tar.gz;
 
+echo 'export PATH=$PATH:/opt/nvim/bin' >> ~/.bashrc
+echo 'export PATH=$PATH:/opt/nvim/bin' >> ~/.zshrc
+
 rsync -a config/ ~/.config/
