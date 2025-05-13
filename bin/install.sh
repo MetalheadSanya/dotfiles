@@ -10,6 +10,9 @@ set -e; \
         'arm64') \
             url='https://github.com/neovim/neovim/releases/latest/download/nvim-linux-arm64.tar.gz'; \
             ;; \
+        'aarch64') \
+            url='https://github.com/neovim/neovim/releases/latest/download/nvim-linux-arm64.tar.gz'; \
+            ;; \
         *) echo >&2 "error: unknown architecture: ${ARCH_NAME}"; exit 1 ;; \
     esac; \
     curl -kfsSL "${url}" -o nvim.tar.gz; \
