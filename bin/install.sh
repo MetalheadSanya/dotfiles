@@ -43,6 +43,8 @@ echo 'export PATH=$PATH:/opt/nvim/bin' >> ~/.bashrc
 echo 'export PATH=$PATH:/opt/nvim/bin' >> ~/.zshrc
 
 echo 'export PATH=$PATH:/opt/jj' >> ~/.bashrc
+echo 'source <(COMPLETE=bash jj)'
 echo 'export PATH=$PATH:/opt/jj' >> ~/.zshrc
+echo 'source <(COMPLETE=zsh jj)
 
 rsync -a config/ ~/.config/
